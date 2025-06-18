@@ -47,12 +47,19 @@ const underMaintenance = import.meta.env.PUBLIC_MAINTENANCE === 'true';
           color: #333;
           flex-direction: column;
         }
-        img {margin-bottom:30px;}
+        img {
+          margin-bottom:30px;
+        }
+        h1 {
+          font-size: 55px;
+          font-weight: bold;
+          color: #3a606d;
+        }
       </style>
     </head>
     <body>
       <img src="/images/logo.png" alt="Black Dog Studios" /><br />
-      <h1>Coming Soon - Stay Tuned!</h1>
+      <h1>coming soon - stay tuned!</h1>
     </body>
   </html>
 ) : (
