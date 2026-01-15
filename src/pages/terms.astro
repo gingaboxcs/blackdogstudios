@@ -1,0 +1,58 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { SITE } from "@data/constants";
+---
+
+<MainLayout title={`Terms of Service | ${SITE.title}`}>
+  <section class="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <h1 class="mb-8 text-3xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl">
+      Terms of Service
+    </h1>
+
+    <div class="prose prose-neutral dark:prose-invert max-w-none">
+      <p class="text-neutral-600 dark:text-neutral-400">
+        Last updated: January 2026
+      </p>
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>
+        By accessing and using Black Dog Studios products and services, you agree to be bound by these Terms of Service.
+      </p>
+
+      <h2>2. Digital Products License</h2>
+      <p>
+        All digital products purchased from Black Dog Studios are licensed, not sold. Upon purchase, you receive a non-exclusive, non-transferable license to use the product according to the specific license terms provided with each product.
+      </p>
+
+      <h2>3. Usage Restrictions</h2>
+      <p>
+        You may not redistribute, resell, or share purchased digital products. Each license is for a single user or entity unless otherwise specified.
+      </p>
+
+      <h2>4. Refund Policy</h2>
+      <p>
+        Due to the nature of digital products, all sales are final. Refunds may be considered on a case-by-case basis if the product is defective or materially different from its description.
+      </p>
+
+      <h2>5. Intellectual Property</h2>
+      <p>
+        All products, content, and materials on this site are owned by Black Dog Studios and protected by intellectual property laws.
+      </p>
+
+      <h2>6. Limitation of Liability</h2>
+      <p>
+        Black Dog Studios shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of our products or services.
+      </p>
+
+      <h2>7. Changes to Terms</h2>
+      <p>
+        We reserve the right to modify these terms at any time. Continued use of our services constitutes acceptance of updated terms.
+      </p>
+
+      <h2>8. Contact</h2>
+      <p>
+        For questions about these terms, please contact us through our <a href="/contact" class="text-neutral-900 underline dark:text-neutral-100">contact page</a>.
+      </p>
+    </div>
+  </section>
+</MainLayout>

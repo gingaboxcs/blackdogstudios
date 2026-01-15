@@ -1,0 +1,37 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { SITE } from "@data/constants";
+---
+
+<MainLayout title={`Purchase Complete | ${SITE.title}`}>
+  <section class="mx-auto max-w-2xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28 text-center">
+    <div class="mb-6">
+      <svg class="mx-auto h-16 w-16 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+      </svg>
+    </div>
+
+    <h1 class="mb-4 text-3xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl">
+      Thank You for Your Purchase!
+    </h1>
+
+    <p class="mb-8 text-lg text-neutral-600 dark:text-neutral-400">
+      Your order has been confirmed. You will receive an email with download instructions shortly.
+    </p>
+
+    <div class="rounded-xl border border-neutral-200 bg-neutral-50 p-6 dark:border-neutral-700 dark:bg-neutral-800">
+      <p class="text-sm text-neutral-600 dark:text-neutral-400">
+        If you don't receive an email within a few minutes, please check your spam folder or <a href="/contact" class="text-neutral-900 underline dark:text-neutral-100">contact us</a> for assistance.
+      </p>
+    </div>
+
+    <div class="mt-8">
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 rounded-lg bg-neutral-800 px-6 py-3 text-sm font-medium text-white transition hover:bg-neutral-700 dark:bg-neutral-200 dark:text-neutral-900 dark:hover:bg-neutral-300"
+      >
+        Back to Home
+      </a>
+    </div>
+  </section>
+</MainLayout>

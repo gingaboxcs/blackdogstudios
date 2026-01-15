@@ -1,38 +1,39 @@
 // An array of links for navigation bar
 const navBarLinks = [
-  { name: "Home", url: "/" },
-  { name: "Products", url: "/products" },
-  { name: "Services", url: "/services" },
-  { name: "Blog", url: "/blog" },
+  { name: "Apps", url: "/apps" },
+  { name: "Themes", url: "/themes" },
+  { name: "Assets", url: "/assets" },
   { name: "Contact", url: "/contact" },
 ];
 // An array of links for footer
 const footerLinks = [
   {
-    section: "Ecosystem",
+    section: "Products",
     links: [
-      { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
+      { name: "Shopify Themes", url: "/themes" },
+      { name: "Stock Assets", url: "/assets" },
+      { name: "Our Apps", url: "/apps" },
     ],
   },
   {
     section: "Company",
     links: [
-      { name: "About us", url: "#" },
-      { name: "Blog", url: "/blog" },
-      { name: "Careers", url: "#" },
-      { name: "Customers", url: "#" },
+      { name: "Contact", url: "/contact" },
+    ],
+  },
+  {
+    section: "Legal",
+    links: [
+      { name: "Terms", url: "/terms" },
+      { name: "Privacy", url: "/privacy" },
+      { name: "Tokushoho", url: "/tokushoho" },
     ],
   },
 ];
 // An object of links for social icons
 const socialLinks = {
-  facebook: "https://www.facebook.com/",
-  x: "https://twitter.com/",
-  github: "https://github.com/mearashadowfax/ScrewFast",
-  google: "https://www.google.com/",
-  slack: "https://slack.com/",
+  x: "https://twitter.com/blackdogstudios",
+  github: "https://github.com/blackdogstudios",
 };
 
 export default {

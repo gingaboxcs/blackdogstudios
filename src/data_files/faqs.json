@@ -1,29 +1,29 @@
 {
-  "subTitle": "Ask us anything about our brand and products, and get factual responses.",
+  "subTitle": "Common questions about our products and services.",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "What's included with a Shopify theme purchase?",
+      "answer": "Each theme purchase includes the complete theme files, documentation, and lifetime updates. You'll get instant access to download and install the theme on your Shopify store."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "Can I use the assets for commercial projects?",
+      "answer": "Yes! All our stock assets come with a commercial license. You can use them in client projects, products for sale, and commercial applications. Check each product's license details for specific terms."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "Do you offer refunds on digital products?",
+      "answer": "Due to the nature of digital products, we generally don't offer refunds once downloaded. However, if there's a significant issue with a product, please contact us and we'll work to resolve it."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "How do I receive my purchase?",
+      "answer": "After completing checkout, you'll receive an email with download links. You can also access your purchases through your order confirmation page. Downloads are available immediately."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "Do you provide support for your products?",
+      "answer": "Yes, we offer email support for all purchases. Documentation is included with every product, and we're here to help if you run into any issues during setup or customization."
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "Are updates included with my purchase?",
+      "answer": "Yes! All purchases include lifetime updates. When we release improvements or new features for a product you've purchased, you'll have access to the updated version at no extra cost."
     }
   ]
 }

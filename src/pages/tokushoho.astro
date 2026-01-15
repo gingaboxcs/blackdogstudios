@@ -1,0 +1,108 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { SITE } from "@data/constants";
+---
+
+<MainLayout title={`特定商取引法に基づく表記 | ${SITE.title}`} lang="ja">
+  <section class="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <h1 class="mb-8 text-3xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl">
+      特定商取引法に基づく表記
+    </h1>
+
+    <div class="overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
+      <table class="w-full text-left text-sm">
+        <tbody class="divide-y divide-neutral-200 dark:divide-neutral-700">
+          <tr>
+            <th class="w-1/3 bg-neutral-100 px-4 py-3 font-medium text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+              販売業者
+            </th>
+            <td class="px-4 py-3 text-neutral-600 dark:text-neutral-400">
+              Black Dog Studios
+            </td>
+          </tr>
+          <tr>
+            <th class="w-1/3 bg-neutral-100 px-4 py-3 font-medium text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+              運営統括責任者
+            </th>
+            <td class="px-4 py-3 text-neutral-600 dark:text-neutral-400">
+              [責任者名]
+            </td>
+          </tr>
+          <tr>
+            <th class="w-1/3 bg-neutral-100 px-4 py-3 font-medium text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+              所在地
+            </th>
+            <td class="px-4 py-3 text-neutral-600 dark:text-neutral-400">
+              請求があれば遅滞なく開示いたします
+            </td>
+          </tr>
+          <tr>
+            <th class="w-1/3 bg-neutral-100 px-4 py-3 font-medium text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+              電話番号
+            </th>
+            <td class="px-4 py-3 text-neutral-600 dark:text-neutral-400">
+              請求があれば遅滞なく開示いたします
+            </td>
+          </tr>
+          <tr>
+            <th class="w-1/3 bg-neutral-100 px-4 py-3 font-medium text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+              メールアドレス
+            </th>
+            <td class="px-4 py-3 text-neutral-600 dark:text-neutral-400">
+              [メールアドレス]
+            </td>
+          </tr>
+          <tr>
+            <th class="w-1/3 bg-neutral-100 px-4 py-3 font-medium text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+              販売価格
+            </th>
+            <td class="px-4 py-3 text-neutral-600 dark:text-neutral-400">
+              各商品ページに表示（税込価格）
+            </td>
+          </tr>
+          <tr>
+            <th class="w-1/3 bg-neutral-100 px-4 py-3 font-medium text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+              商品代金以外の必要料金
+            </th>
+            <td class="px-4 py-3 text-neutral-600 dark:text-neutral-400">
+              なし
+            </td>
+          </tr>
+          <tr>
+            <th class="w-1/3 bg-neutral-100 px-4 py-3 font-medium text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+              支払方法
+            </th>
+            <td class="px-4 py-3 text-neutral-600 dark:text-neutral-400">
+              クレジットカード（Stripe経由）
+            </td>
+          </tr>
+          <tr>
+            <th class="w-1/3 bg-neutral-100 px-4 py-3 font-medium text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+              支払時期
+            </th>
+            <td class="px-4 py-3 text-neutral-600 dark:text-neutral-400">
+              ご注文時に即時決済
+            </td>
+          </tr>
+          <tr>
+            <th class="w-1/3 bg-neutral-100 px-4 py-3 font-medium text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+              商品の引渡し時期
+            </th>
+            <td class="px-4 py-3 text-neutral-600 dark:text-neutral-400">
+              決済完了後、即時ダウンロード可能
+            </td>
+          </tr>
+          <tr>
+            <th class="w-1/3 bg-neutral-100 px-4 py-3 font-medium text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+              返品・キャンセルについて
+            </th>
+            <td class="px-4 py-3 text-neutral-600 dark:text-neutral-400">
+              デジタル商品のため、原則として返品・返金はお受けできません。<br />
+              商品に欠陥がある場合は、購入後7日以内にご連絡ください。
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</MainLayout>

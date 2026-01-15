@@ -1,147 +1,148 @@
 ---
 // Import the necessary components
 import MainLayout from "@/layouts/MainLayout.astro";
-import HeroSection from "@components/sections/landing/HeroSection.astro";
-import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
-import ClientsSection from "@components/sections/landing/ClientsSection.astro";
-import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
-import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
-import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
-import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
-import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "@images/hero-image.avif";
 import faqs from "@data/faqs.json";
-import features from "@data/features.json";
-import pricing from "@data/pricing.json";
-import featureImage from "@images/features-image.avif";
-import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
-import dashboard from "@images/dashboard-image.avif";
-import { partnersData } from "@/data_files/constants";
-
-const avatarSrcs: Array<string> = [
-  "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-];
+import { SITE } from "@data/constants";
 ---
 
 <MainLayout>
-  <AnnouncementBanner
-    btnId="dismiss-button"
-    btnTitle="Explore ScrewFast on GitHub"
-    url="https://github.com/mearashadowfax/ScrewFast"
-  />
+  <!-- Hero Section -->
+  <section class="pt-6 sm:pt-10 pb-[4px] overflow-visible">
+    <div class="mx-auto max-w-6xl">
+      <div class="flex flex-col items-center gap-12 lg:flex-row lg:items-end lg:gap-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 relative">
+          <img
+            src="/images/logo.svg"
+            alt="Black Dog Studios"
+            class="h-48 w-auto sm:h-64 lg:h-80 translate-y-12 lg:translate-y-16"
+            style="filter: drop-shadow(5px 0 0 white) drop-shadow(-5px 0 0 white) drop-shadow(0 5px 0 white) drop-shadow(0 -5px 0 white);"
+          />
+        </div>
+        <!-- Text Content -->
+        <div class="text-center lg:text-left">
+          <h1 class="text-4xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-5xl lg:text-6xl">
+            Premium Digital Products
+          </h1>
+          <p class="mt-6 text-lg text-neutral-600 dark:text-neutral-400 sm:text-xl">
+            Shopify themes, stock assets, and creative tools for developers and designers.
+          </p>
+          <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
+            <a
+              href="/themes"
+              class="rounded-lg bg-neutral-900 px-8 py-3 text-sm font-medium text-white transition hover:bg-neutral-800 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200"
+            >
+              Browse Themes
+            </a>
+            <a
+              href="/assets"
+              class="rounded-lg border border-neutral-300 px-8 py-3 text-sm font-medium text-neutral-700 transition hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+            >
+              View Assets
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <HeroSection
-    title=`Equip Your Projects with <span
-        class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>`
-    subTitle="Top-quality hardware tools and expert construction services for every project need."
-    primaryBtn="Start Exploring"
-    primaryBtnURL="/products"
-    secondaryBtn="Contact Sales Team"
-    secondaryBtnURL="/contact"
-    withReview={true}
-    avatars={avatarSrcs}
-    rating=`<span class="font-bold">4.8</span> / 5`
-    starCount={4}
-    reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
-    src={heroImage}
-    alt="Stack of ScrewFast product boxes containing assorted hardware tools"
-  />
+  <!-- Product Categories -->
+  <section class="border-t border-neutral-300 pt-24 pb-20 mt-[24px] bg-neutral-300">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="text-center text-2xl font-bold text-neutral-900 dark:text-neutral-100 sm:text-3xl">
+        What We Offer
+      </h2>
+      <p class="mt-4 text-center text-neutral-600 dark:text-neutral-400">
+        Quality digital products backed by documentation and support.
+      </p>
 
-  <ClientsSection
-    title="Trusted by Industry Leaders"
-    subTitle="Experience the reliability chosen by industry giants."
-    partners={partnersData}
-  />
+      <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Shopify Themes -->
+        <a href="/themes" class="group rounded-xl border border-neutral-200 p-8 transition hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-600">
+          <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-800">
+            <svg class="h-6 w-6 text-neutral-600 dark:text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100">Shopify Themes</h3>
+          <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+            Premium, conversion-focused themes designed for modern e-commerce. Mobile-first and easy to customize.
+          </p>
+        </a>
 
-  <FeaturesGeneral
-    title="Meeting Industry Demands"
-    subTitle="At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we're dedicated to helping you overcome obstacles and achieve your goals."
-    src={featureImage}
-    alt="ScrewFast products in floating boxes"
-    features={features}
-  />
+        <!-- Stock Assets -->
+        <a href="/assets" class="group rounded-xl border border-neutral-200 p-8 transition hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-600">
+          <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-800">
+            <svg class="h-6 w-6 text-neutral-600 dark:text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100">Stock Assets</h3>
+          <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+            Graphics, templates, fonts, and creative resources. All assets include commercial licenses.
+          </p>
+        </a>
 
-  <FeaturesNavs
-    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
-    tabs={[
-      {
-        heading: "Cutting-Edge Tools",
-        content:
-          "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
-        svg: "tools",
-        src: tools,
-        alt: "Yellow and black heavy equipment on brown grass field",
-        first: true,
-      },
-      {
-        heading: "Intuitive Dashboards",
-        content:
-          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
-        svg: "dashboard",
-        src: dashboard,
-        alt: "A screenshot or graphic representation of the intuitive dashboard",
-        second: true,
-      },
-      {
-        heading: "Robust Features",
-        content:
-          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
-        svg: "house",
-        src: construction,
-        alt: "Gray metal building frame near tower crane during daytime",
-      },
-    ]}
-  />
+        <!-- Our Apps -->
+        <a href="/apps" class="group rounded-xl border border-neutral-200 p-8 transition hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-600">
+          <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-800">
+            <svg class="h-6 w-6 text-neutral-600 dark:text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100">Our Apps</h3>
+          <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+            Desktop and mobile applications for macOS, Windows, and Linux. Visit our apps page to learn more.
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
 
-  <TestimonialsSection
-    title="Fast-Track Your Projects"
-    subTitle="At ScrewFast, we ensure a swift start with instant account setup. Experience the speed of construction redefined."
-    ;
-    testimonials={[
-      {
-        content:
-          "ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
-        author: "Samantha Ruiz",
-        role: "Chief Operating Officer | ConstructIt Inc.",
-        avatarSrc:
-          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-      },
-    ]}
-    statistics={[
-      {
-        count: "70k+",
-        description:
-          "customers equipped — from DIY to major construction firms",
-      },
-      {
-        count: "35%",
-        description:
-          "uptick in project efficiency with ScrewFast tools and services",
-      },
-      {
-        count: "15.3%",
-        description:
-          "reduction in maintenance costs reported by long-term clients",
-      },
-      {
-        count: "2x",
-        description: "quicker assembly using innovative fastening solutions",
-      },
-    ]}
-  />
-
-  <PricingSection pricing={pricing} />
+  <!-- Stats Section -->
+  <section class="border-t border-neutral-200 py-20 dark:border-neutral-800">
+    <div class="mx-auto max-w-4xl">
+      <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-neutral-900 dark:text-neutral-100">100+</div>
+          <div class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Products</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-neutral-900 dark:text-neutral-100">Instant</div>
+          <div class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Download</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-neutral-900 dark:text-neutral-100">Lifetime</div>
+          <div class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Updates</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-neutral-900 dark:text-neutral-100">24hr</div>
+          <div class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
-  <HeroSectionAlt
-    title="Let's Build Together"
-    subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
-    url="https://github.com/mearashadowfax/ScrewFast"
-  />
+  <!-- CTA Section -->
+  <section class="border-t border-neutral-200 py-20 dark:border-neutral-800">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-2xl font-bold text-neutral-900 dark:text-neutral-100 sm:text-3xl">
+        Ready to Get Started?
+      </h2>
+      <p class="mt-4 text-neutral-600 dark:text-neutral-400">
+        Browse our collection of premium digital products. Instant download, lifetime updates.
+      </p>
+      <div class="mt-8">
+        <a
+          href="/themes"
+          class="rounded-lg bg-neutral-900 px-8 py-3 text-sm font-medium text-white transition hover:bg-neutral-800 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200"
+        >
+          Browse Products
+        </a>
+      </div>
+    </div>
+  </section>
 </MainLayout>

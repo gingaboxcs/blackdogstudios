@@ -77,22 +77,11 @@ const underMaintenance = import.meta.env.PUBLIC_MAINTENANCE === 'true';
         customOgTitle={customOgTitle}
       />
       <title>{title}</title>
-      <script is:inline>
-        if (
-          localStorage.getItem("hs_theme") === "dark" ||
-          (!("hs_theme" in localStorage) &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches)
-        ) {
-          document.documentElement.classList.add("dark");
-        } else {
-          document.documentElement.classList.remove("dark");
-        }
-      </script>
       <script>
         import "@scripts/lenisSmoothScroll.js";
       </script>
     </head>
-    <body class="bg-neutral-200 selection:bg-yellow-400 selection:text-neutral-700 dark:bg-neutral-800">
+    <body class="bg-white selection:bg-neutral-600 selection:text-neutral-100">
       <div class="mx-auto max-w-(--breakpoint-2xl) px-4 sm:px-6 lg:px-8">
         <Navbar />
         <main>

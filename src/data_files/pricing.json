@@ -1,38 +1,39 @@
 {
-  "title": "Simple, Transparent Pricing",
-  "subTitle": "Boost efficiency with ScrewFast's clear, value-driven plans.",
-  "badge": "Best value",
-  "thirdOption": "Enterprise Solutions?",
-  "btnText": "Get a Custom Quote",
+  "title": "Product Categories",
+  "subTitle": "Professional digital products for your next project.",
+  "badge": "Popular",
+  "thirdOption": "Custom work?",
+  "btnText": "Contact Us",
 
   "starterKit": {
-    "name": "Starter Kit",
-    "description": "Best option for DIY projects",
-    "price": "49",
-    "cents": ".00",
-    "billingFrequency": "USD / monthly",
+    "name": "Shopify Themes",
+    "description": "Premium e-commerce themes",
+    "price": "129",
+    "cents": "+",
+    "billingFrequency": "per theme",
     "features": [
-      "Key hardware tools",
-      "Access to guides & tutorials",
-      "Standard support"
+      "Mobile-first responsive design",
+      "Conversion-optimized layouts",
+      "Easy customization",
+      "Documentation included"
     ],
-    "purchaseBtnTitle": "Get the Starter Kit",
-    "purchaseLink": "#"
+    "purchaseBtnTitle": "Browse Themes",
+    "purchaseLink": "/themes"
   },
 
   "professionalToolbox": {
-    "name": "Professional Toolbox",
-    "description": "Best for large scale uses",
-    "price": "89",
-    "cents": ".00",
-    "billingFrequency": "USD / monthly",
+    "name": "Stock Assets",
+    "description": "Graphics, templates & more",
+    "price": "19",
+    "cents": "+",
+    "billingFrequency": "per asset",
     "features": [
-      "Premium tool selection",
-      "Priority support",
-      "Exclusive content & deals",
-      "Bulk order discounts"
+      "High-resolution files",
+      "Commercial license",
+      "Multiple formats",
+      "Instant download"
     ],
-    "purchaseBtnTitle": "Get the Professional Toolbox",
-    "purchaseLink": "#"
+    "purchaseBtnTitle": "Browse Assets",
+    "purchaseLink": "/assets"
   }
 }
