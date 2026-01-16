@@ -282,7 +282,7 @@ export const Icons = {
       },
     ],
     class:
-      "h-4 w-4 shrink-0 fill-current text-neutral-700 dark:text-neutral-400",
+      "h-4 w-4 shrink-0 fill-current",
     viewBox: "0 0 24 24",
     fill: "currentColor",
     title: "Twitter",
@@ -294,7 +294,7 @@ export const Icons = {
       },
     ],
     class:
-      "h-4 w-4 shrink-0 fill-current text-neutral-700 dark:text-neutral-400",
+      "h-4 w-4 shrink-0 fill-current",
     viewBox: "0 0 24 24",
     fill: "currentColor",
     title: "Facebook",
@@ -306,7 +306,7 @@ export const Icons = {
       },
     ],
     class:
-      "h-4 w-4 shrink-0 fill-current text-neutral-700 dark:text-neutral-400",
+      "h-4 w-4 shrink-0 fill-current",
     viewBox: "0 0 24 24",
     fill: "currentColor",
     title: "GitHub",
@@ -318,7 +318,7 @@ export const Icons = {
       },
     ],
     class:
-      "h-4 w-4 shrink-0 fill-current text-neutral-700 dark:text-neutral-400",
+      "h-4 w-4 shrink-0 fill-current",
     viewBox: "0 0 24 24",
     fill: "currentColor",
     title: "Google",
@@ -330,7 +330,7 @@ export const Icons = {
       },
     ],
     class:
-      "h-4 w-4 shrink-0 fill-current text-neutral-700 dark:text-neutral-400",
+      "h-4 w-4 shrink-0 fill-current",
     viewBox: "0 0 24 24",
     fill: "currentColor",
     title: "Slack",
